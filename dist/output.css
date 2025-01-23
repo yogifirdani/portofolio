@@ -695,28 +695,12 @@ video {
   margin-top: 0.25rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mt-24 {
   margin-top: 6rem;
 }
 
-.mr-0 {
-  margin-right: 0px;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .block {
@@ -901,6 +885,11 @@ video {
   padding: 1rem;
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -946,26 +935,6 @@ video {
   padding-bottom: 1.75rem;
 }
 
-.px-9 {
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -986,16 +955,16 @@ video {
   padding-top: 6rem;
 }
 
-.pt-28 {
-  padding-top: 7rem;
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .pt-36 {
   padding-top: 9rem;
 }
 
-.pt-32 {
-  padding-top: 8rem;
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -1190,6 +1159,20 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+#humberger {
+  right: 2rem;
+  /* Atur jarak dari tepi kanan */
+}
+
+@media (max-width: 768px) {
+  #humberger {
+    right: 1rem;
+    /* Nonaktifkan posisi kanan */
+    left: auto;
+    /* Geser ke kiri */
+  }
+}
+
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
   border-color: rgb(126 34 206 / var(--tw-border-opacity, 1));
@@ -1309,10 +1292,6 @@ body {
 
   .lg\:mt-2 {
     margin-top: 0.5rem;
-  }
-
-  .lg\:mt-9 {
-    margin-top: 2.25rem;
   }
 
   .lg\:block {

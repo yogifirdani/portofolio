@@ -28,3 +28,14 @@ body {
 .humberger-active > span:nth-child(3) {
   @apply -rotate-45;
 }
+
+#humberger {
+  right: 2rem; /* Atur jarak dari tepi kanan */
+}
+
+@media (max-width: 768px) {
+  #humberger {
+    right: 1rem; /* Nonaktifkan posisi kanan */
+    left: auto; /* Geser ke kiri */
+  }
+}
